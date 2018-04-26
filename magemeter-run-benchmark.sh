@@ -17,8 +17,8 @@ JMX_PATH="."
 REPORT_SAVE_PATH="."
 
 # Adjust as desired and depending on your Magento installation:
-HOST=""	# Magento installation base url
-PORT=""			# Port used
+HOST=""				# Magento installation base url
+PORT=""				# Port used
 BASE_PATH="/"		# Magento base path if installed in subdirector
 RAMP_PERIOD="300"	# How long until maximum number of users reached
 ORDERS="0"			# Adjust if you want orders created during tests
