@@ -17,8 +17,8 @@ JMX_PATH="."
 REPORT_SAVE_PATH="."
 
 # Adjust as desired and depending on your Magento installation:
-HOST="localhost"	# Magento installation base url
-PORT="80"			# Port used
+HOST=""	# Magento installation base url
+PORT=""			# Port used
 BASE_PATH="/"		# Magento base path if installed in subdirector
 RAMP_PERIOD="300"	# How long until maximum number of users reached
 ORDERS="0"			# Adjust if you want orders created during tests
@@ -28,11 +28,11 @@ VIEW_PRODUCT_ADD_TO_CART_PERCENT="62"
 VIEW_CATALOG_PERCENT="30"
 GUEST_CHECKOUT_PERCENT="4"
 CUSTOMER_CHECKOUT_PERCENT="4"
-CUSTOMER_PASSWORD="123123q"
+CUSTOMER_PASSWORD=""
 URL_SUFFIX=".html"
 ADMIN_PATH="admin"			# Path for Magento admin
-ADMIN_USER="admin"			# Magento admin user
-ADMIN_PASSWORD="123123q"	# Magento admin password
+ADMIN_USER=""				# Magento admin user
+ADMIN_PASSWORD=""			# Magento admin password
 WEBSITE_ID="1"
 THINK_TIME_DEVIATION="1000"
 THINK_TIME_DELAY_OFFSET="2000"
