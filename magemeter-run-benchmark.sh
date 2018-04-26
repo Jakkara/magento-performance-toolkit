@@ -6,7 +6,7 @@
 set -x
 
 # Path to Apache jMeter executable
-JMETER_PATH="/path/to/apache/jmeter/bin"
+JMETER_PATH=""
 
 # Path to benchmark.jmx file:
 # * Magento 1.x => /path/to/magento/root/dev/tools/performance_toolkit
@@ -18,6 +18,7 @@ REPORT_SAVE_PATH="."
 
 # Adjust as desired and depending on your Magento installation:
 HOST="localhost"    # Magento installation base url
+PORT="80"			# Port used
 BASE_PATH="/"       # Magento base path if installed in subdirector
 RAMP_PERIOD="300"   # How long until maximum number of users reached
 ORDERS="0"          # Adjust if you want orders created during tests
@@ -40,6 +41,7 @@ THINK_TIME_DELAY_OFFSET="2000"
 
 ${JMETER_PATH}/jmeter -n -t ${JMX_PATH}/benchmark.jmx \
     -Jhost=${HOST} \
+    -Jport=${PORT} \
     -Jbase_path=${BASE_PATH} \
     -Jreport_save_path=${REPORT_SAVE_PATH} \
     -Jramp_period=${RAMP_PERIOD} \
