@@ -1,1 +1,3 @@
-# magento-performance-toolkit
+## WIP
+
+Load testing for Magento CE 1.9.
